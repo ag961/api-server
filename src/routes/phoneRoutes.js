@@ -17,26 +17,26 @@ async function createRecord(req, res){
 }
 
 async function getRecords (req, res){
-  const allRecords = await Movies.read();
+  const allRecords = await Phones.read();
   res.status(200).json(allRecords);
 }
 
 async function getOneRecord(req, res){
   let id = req.params.id;
-  const oneRecord = await Movies.read(id);
+  const oneRecord = await Phones.read(id);
   res.status(200).json(oneRecord);
 }
 
 async function updateRecord(req, res){
   let id = req.params.id;
   let updateObj = req.body;
-  const updatedRecord = await Movies.update(id, updateObj);
+  const updatedRecord = await Phones.update(id, updateObj);
   res.status(200).json(updatedRecord);
 }
 
 async function deleteRecord(req, res){
   let id = req.params.id;
-  const deletedRecord= await Movies.delete(id);
+  const deletedRecord= await Phones.delete(id);
   res.status(200).json(deletedRecord);
 }
 
