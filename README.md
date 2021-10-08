@@ -27,5 +27,4 @@ Dev branch -- https://ayrat-server-dev.herokuapp.com/
 
 ## UML
 
-
 ![lab3-UML](./img/lab4UML.png);
